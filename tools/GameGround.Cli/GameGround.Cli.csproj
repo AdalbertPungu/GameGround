@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GameGround.Data\GameGround.Data.csproj" />
+    <ProjectReference Include="..\..\src\GameGround.AgentFramework\GameGround.AgentFramework.csproj" />
+  </ItemGroup>
+</Project>
