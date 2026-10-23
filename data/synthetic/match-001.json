@@ -1,0 +1,107 @@
+{
+  "manifest": {
+    "datasetId": "synthetic-miniature-v1",
+    "schemaVersion": 1,
+    "isSynthetic": true
+  },
+  "match": {
+    "matchId": "harbor-meadow-miniature",
+    "homeTeam": {
+      "id": 1,
+      "name": "Harbor FC",
+      "players": [
+        { "id": 11, "name": "Alex Harbor" },
+        { "id": 12, "name": "Robin Harbor" }
+      ]
+    },
+    "awayTeam": {
+      "id": 2,
+      "name": "Meadow United",
+      "players": [
+        { "id": 21, "name": "Sam Meadow" },
+        { "id": 22, "name": "Charlie Meadow" }
+      ]
+    },
+    "periods": [
+      { "number": 1, "duration": "00:01:00" },
+      { "number": 2, "duration": "00:01:00" }
+    ]
+  },
+  "events": [
+    { "type": "periodStarted", "id": 1, "sequence": 1, "period": 1, "clock": "00:00:00" },
+    {
+      "type": "controlChanged", "id": 2, "sequence": 2, "period": 1, "clock": "00:00:00",
+      "from": { "kind": "deadBall", "team": null },
+      "to": { "kind": "team", "team": 1 }
+    },
+    {
+      "type": "pass", "id": 3, "sequence": 3, "period": 1, "clock": "00:00:05",
+      "team": 1, "player": 11, "recipient": 12, "outcome": "completed"
+    },
+    {
+      "type": "pressure", "id": 4, "sequence": 4, "period": 1, "clock": "00:00:06",
+      "team": 2, "player": 21
+    },
+    {
+      "type": "tackle", "id": 5, "sequence": 5, "period": 1, "clock": "00:00:07",
+      "team": 2, "player": 22
+    },
+    {
+      "type": "controlChanged", "id": 6, "sequence": 6, "period": 1, "clock": "00:00:07",
+      "from": { "kind": "team", "team": 1 },
+      "to": { "kind": "contested", "team": null }
+    },
+    {
+      "type": "controlChanged", "id": 7, "sequence": 7, "period": 1, "clock": "00:00:08",
+      "from": { "kind": "contested", "team": null },
+      "to": { "kind": "team", "team": 2 }
+    },
+    {
+      "type": "pass", "id": 8, "sequence": 8, "period": 1, "clock": "00:00:10",
+      "team": 2, "player": 22, "recipient": 21, "outcome": "completed"
+    },
+    {
+      "type": "shot", "id": 9, "sequence": 9, "period": 1, "clock": "00:00:12",
+      "team": 2, "player": 21, "outcome": "goal"
+    },
+    {
+      "type": "controlChanged", "id": 10, "sequence": 10, "period": 1, "clock": "00:00:13",
+      "from": { "kind": "deadBall", "team": null },
+      "to": { "kind": "team", "team": 1 }
+    },
+    {
+      "type": "foul", "id": 11, "sequence": 11, "period": 1, "clock": "00:00:14",
+      "team": 2, "player": 22
+    },
+    {
+      "type": "controlChanged", "id": 12, "sequence": 12, "period": 1, "clock": "00:00:15",
+      "from": { "kind": "deadBall", "team": null },
+      "to": { "kind": "team", "team": 1 }
+    },
+    {
+      "type": "pass", "id": 13, "sequence": 13, "period": 1, "clock": "00:00:16",
+      "team": 1, "player": 11, "recipient": 12, "outcome": "incomplete"
+    },
+    {
+      "type": "controlChanged", "id": 14, "sequence": 14, "period": 1, "clock": "00:00:17",
+      "from": { "kind": "team", "team": 1 },
+      "to": { "kind": "team", "team": 2 }
+    },
+    {
+      "type": "shot", "id": 15, "sequence": 15, "period": 1, "clock": "00:00:18",
+      "team": 2, "player": 21, "outcome": "saved"
+    },
+    { "type": "periodEnded", "id": 16, "sequence": 16, "period": 1, "clock": "00:01:00" },
+    { "type": "periodStarted", "id": 17, "sequence": 17, "period": 2, "clock": "00:00:00" },
+    {
+      "type": "controlChanged", "id": 18, "sequence": 18, "period": 2, "clock": "00:00:00",
+      "from": { "kind": "deadBall", "team": null },
+      "to": { "kind": "team", "team": 1 }
+    },
+    {
+      "type": "shot", "id": 19, "sequence": 19, "period": 2, "clock": "00:00:05",
+      "team": 1, "player": 12, "outcome": "goal"
+    },
+    { "type": "periodEnded", "id": 20, "sequence": 20, "period": 2, "clock": "00:01:00" }
+  ]
+}
