@@ -23,9 +23,7 @@ The current offline demonstration uses synthetic match data and simulated agent 
 
 **Watch the GameGround demonstration:** [GameGround Demo on YouTube](https://youtu.be/vI2UNStYhqw)
 
-The final demonstration video must be under two minutes and accessible to evaluators without authentication.
-
-## What works today
+## What works
 
 - Local JSON dataset validation and replay.
 - Deterministic football intelligence calculations and source-event provenance.
